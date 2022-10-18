@@ -1,0 +1,65 @@
+.backText {
+    color:black;
+    position:absolute;
+    bottom:10px;
+    right:50px;
+}
+
+.hoverText {
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.hoverText:hover {
+    color: gray;
+}
+
+.colorchange {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    animation-name: blink;
+    animation-iteration-count: infinite; 
+    animation-duration: 2s 
+}
+
+.glid {
+    width: 200px;
+    height: 25px;
+    margin-left: 10px;
+    background-color: red;
+    animation-name:  glid;
+    animation-iteration-count: infinite; 
+    animation-duration: 1s;
+    transition: 0.5s;
+}
+
+.glid:hover {
+    background-color: blue;
+}
+
+.zoomimg {
+    width: 200px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 400px;
+    transition: 0.5s;
+}
+
+.zoomimg:hover {
+    transform: scale(1.25);
+    filter: invert(1);
+}
+
+
+@keyframes blink {  
+    0% {background-color: white;}
+    50% {background-color: black}
+    100% {background-color: white;}
+}
+
+@keyframes glid {
+    0% {margin-left: 10px;}
+    50% {margin-left: 50px;}
+    100% {margin-left: 10px;}
+}

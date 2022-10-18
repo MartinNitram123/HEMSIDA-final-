@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding : 0;
+  }
+  
+.header{
+    position: fixed;
+    height:50px;
+    width: 100%;
+    border: 2px;
+    background-color: #8A897C;
+    animation-name: revealHeader;
+    animation-duration: 2s;
+    animation-delay: 0s;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0%;
+    height:50px;
+    width: 100%;
+    background-color: #353535;
+    opacity: 0%;
+    animation-name: revealFooter;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.ntilogo {
+    height: 70%;
+    float: right;
+    margin-top: -29px;
+    margin-right: 8px;
+}
+
+.icons {
+    position: absolute; 
+    filter: invert(100%);
+    height: 30px;
+}
+
+.iconsContact {
+    position: absolute; 
+    filter: invert(100%);
+    height: 30px;
+    margin-left: 26px;
+}
+
+/*BILDER*/
+    /*PORTRÄTT*/
+    .picport {
+    opacity: 0%;
+    height:250px;
+    border-radius: 50%;
+    margin-left: 38px;
+    margin-top: 100px;
+    box-shadow: 0 0 0 2.5px black;
+    border-radius: 50%;
+    background-color: #9db4d6;
+    animation-name: portraitglidner;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    }
+
+    /*STOR BILD*/
+    .picbig {
+    position: absolute;
+    opacity: 0%;
+    height:350px;
+    border-radius: 3%;
+    margin-left: 835px;
+    top: 102px;
+    box-shadow: 0 0 0 2.5px black;
+    border-radius: 5px;
+    background-color: #9db4d6;
+    animation-name: glidner;
+    animation-delay: 3.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    }
+
+/*TEXT*/
+    .headerText {
+        color: #353535;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        margin-top: 7.5px;
+        transition: 0.5s;
+    }
+
+    .mainTextInfo {
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 45px;
+        margin-top: 5px;
+    }
+
+    .mainText {
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .mainTextContact {
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 70px;
+        margin-top: 5px;
+    }
+
+    .punktText {
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 43px;
+        margin-right: 25px;
+    }
+
+    .orangeText {
+        color: rgb(161, 46, 0);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: underline;
+        margin-left: 25px;
+        margin-top: 7.5px;
+    }
+
+    .styled {
+        color: white;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+/*RUTOR*/
+    /*Info-ruta*/
+    .textbox1 {
+        opacity: 0%;
+        position: absolute;
+        height:240px;
+        width:230px;
+        border-radius: 5%;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        top: 350px;
+        background-color: #8A897C;
+        border: 3px solid black;
+        animation-name: infoglidupp;
+        animation-delay: 2.25s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    /*Summering-ruta*/
+    .textbox2 {
+        opacity: 0%;
+        position: absolute;
+        height:175px;
+        width:370px;
+        border-radius: 2%;
+        top: 100px;
+        left: 320px;
+        background-color: #8A897C;
+        border: 3px solid black;
+        animation-name: glidner;
+        animation-delay: 2.5s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    /*Intresse-ruta*/
+    .textbox3 {
+        opacity: 0%;
+        position: absolute;
+        height: 350px;
+        width: 370px;
+        border-radius: 2%;
+        top: 185px;
+        left: 320px;
+        background-color: #8A897C;
+        border: 3px solid black;
+        animation-name: intresseglidupp;
+        animation-delay: 2.75s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    /*Språk-ruta*/
+    .textbox4 {
+        opacity: 0%;
+        position: absolute;
+        height: 235px;
+        width: 370px;
+        border-radius: 2%;
+        top: 100px;
+        left: 715px;
+        background-color: #8A897C;
+        border: 3px solid black;
+        animation-name: glidner;
+        animation-delay: 3s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    /*Framtid-ruta*/
+    .textbox5 {
+        opacity: 0%;
+        position: absolute;
+        height: 290px;
+        width: 370px;
+        border-radius: 2%;
+        top: 400px;
+        left: 715px;
+        background-color: #8A897C;
+        border: 3px solid black;
+        animation-name: erfarenhetglidupp;
+        animation-delay: 3.25s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    /*Kontakt-ruta*/
+    .textbox6 {
+        opacity: 0%;
+        position: absolute;
+        height: 175px;
+        width: 370px;
+        border-radius: 2%;
+        top: 475px;
+        left: 1110px;
+        background-color: #8A897C;
+        border: 3px solid black;
+        animation-name: kontaktglidupp;
+        animation-delay: 3.75s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+/*BARS*/
+    .barSkeleton {
+        margin-top: 2px;
+        height: 20px;
+        width: 200px;
+        background-color: #8A897C;
+        border-style:dashed;
+        border-width: 3px;
+        border-color: white;
+    }
+
+    .bar100 {
+        position: absolute;
+        margin-top: -20.82px;
+        margin-left: 4.9px;
+        height: 16px;
+        width: 0px;
+        background-color: white; 
+        animation-name: bar100ani;
+        animation-duration: 0.75s;
+        animation-fill-mode: forwards;
+    }
+
+    .bar25 {
+        position: absolute;
+        margin-top: -20.82px;
+        margin-left: 4.9px;
+        height: 16px;
+        width: 0px;
+        background-color: white; 
+        animation-name: bar25ani;
+        animation-delay: 4s;
+        animation-duration: 0.75s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes revealHeader {
+    0% {opacity: 0%; margin-top: -20px}
+    100% {opacity: 100%; margin-top: 7.5px}
+    }
+
+    @keyframes revealFooter {
+    0% {opacity: 0%; bottom: -5%;}
+    100% {opacity: 100%; bottom: 0%;}
+    }
+
+    @keyframes bar100ani {
+    0% {width: 0px;}
+    100% {width: 196px}
+    }
+
+    @keyframes bar25ani {
+        0% {width: 0px;}
+        100% {width: 60px}
+    }
+
+    @keyframes glidner {
+        0% {opacity: 0%; top: 50px;}
+        100% {opacity: 100%; top: 100px;}
+    }
+
+    @keyframes glidupp {
+        0% {opacity: 0%; top: 450px;}
+        100% {opacity: 100%; top: 400px;}
+    }
+  
+    @keyframes portraitglidner {
+        0% {opacity: 0%; margin-top: 50px;}
+        100% {opacity: 100%; margin-top: 100px;}
+    }
+
+    @keyframes erfarenhetglidupp {
+        0% {opacity: 0%; top: 410px;}
+        100% {opacity: 100%; top: 360px;}
+    }
+    
+    @keyframes infoglidupp {
+        0% {opacity: 0%; margin-top: 105px;}
+        100% {opacity: 100%; margin-top: 55px;}
+    }
+
+    @keyframes kontaktglidupp {
+        0% {opacity: 0%; top: 525px;}
+        100% {opacity: 100%; top: 475px;}
+    }
+
+    @keyframes intresseglidupp {
+        0% {opacity: 0%; top: 350px;}
+        100% {opacity: 100%; top: 300px;}
+    }
+
+    .headerText:hover {
+        color: white;
+    }
+
+    /* Ville testa fler hover-grejer och att element har skiftande färger, men eftersom alla element freezar på sista framen av animationerna går det inte.. */
